@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material"
+    tools:context=".LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSignUpLogin"
+            style="@android:style/Widget.Material.Button.Borderless.Small"
+            android:layout_width="78dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="384dp"
+            android:layout_marginEnd="28dp"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/ivLogin"
+            android:layout_width="87dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/cahaya" />
+
+        <Button
+            android:id="@+id/btnSignInLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="65dp"
+            android:background="@color/material"
+            android:backgroundTint="@color/buttonmaterial"
+            android:backgroundTintMode="src_over"
+            android:text="Masuk"
+            android:textColor="?android:attr/colorForeground"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/etPasswdLogin"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/etPasswdLogin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:text="PRAKTIKUM MDP KELOMPOK 20"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/etUsernameLogin"
+            app:layout_constraintEnd_toEndOf="@+id/etUsernameLogin"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/etUsernameLogin" />
+
+        <EditText
+            android:id="@+id/etUsernameLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/user"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/etPasswdLogin"
+            app:layout_constraintEnd_toEndOf="@+id/etPasswdLogin"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etPasswdLogin" />
+
+        <EditText
+            android:id="@+id/etPasswdLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignInLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Belum memilik akun?"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSignUpLogin"
+            app:layout_constraintEnd_toStartOf="@+id/btnSignUpLogin"
+            app:layout_constraintHorizontal_bias="0.964"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnSignUpLogin"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
